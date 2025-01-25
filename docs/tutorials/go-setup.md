@@ -38,9 +38,13 @@ git add .
 git commit -m "Adding a README file to my Go project."
 ```
 
+
+
 ### Creating your remote repository
 
 Navigate to your Github and create a new repository with the **same name as your local repository**. Add whatever description you’d like!
+
+
 
 ### Linking your local and remote repositories
 With your project still open in VSCode, add your Github repository as the corresponding remote repository:
