@@ -6,10 +6,10 @@
 ## Prerequisites
 Before attempting to set up your workspace, make sure you’ve completed the following:
 
-1. Create a Github account - link
-2. Install git - link
-3. Install Docker - link
-4. Install VSCode - link
+* Create a Github account - link
+* Install git - link
+* Install Docker - link
+* Install VSCode - link
 
 ## Setting up Your Local and Remote Repositories
 
@@ -63,4 +63,22 @@ git push origin
 ```
 
 Woohoo! Your local and remote repositories are now set up and linked!
+
+
+## Setting up Your Dev Container
+
+Step 1: say a prayer to the Docker gods
+
+Open up your "go-project" directory in VSCode again!
+1. Navigate to the left sidebar on your screen
+2. Click on the extensions tab
+3. Download the Dev Containers extension in VSCode
+
+In the root of go-project, create a directory called ```.devcontainer```. Inside of this directory, create a file named ```devcontainer.json```.
+
+The ```devcontainer.json``` file that you just created holds the configuration for your development environment.
+Paste this text inside of it:
+```
+/// config here
+```
 
