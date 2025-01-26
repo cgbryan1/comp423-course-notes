@@ -67,7 +67,9 @@ Woohoo! Your local and remote repositories are now set up and linked!
 
 ## Setting up Your Dev Container
 
-Step 1: say a prayer to the Docker gods
+Step 0: say a prayer to the Docker gods.
+
+### Configure your Dev Container
 
 Open up your "go-project" directory in VSCode again!
 1. Navigate to the left sidebar on your screen
@@ -79,6 +81,15 @@ In the root of go-project, create a directory called ```.devcontainer```. Inside
 The ```devcontainer.json``` file that you just created holds the configuration for your development environment.
 Paste this text inside of it:
 ```
-/// config here
+/// put code here eek
 ```
 
+if you look closely at this code, you can see that we specify the following:
+1. name: a name for your dev container
+2. image: a base image from microsoft. this tutorial uses one associated with Go.
+3. customizations: include extensions needed in your dev container so that they're installed for other developers automatically.
+FINISH CUTOMIZE
+4. postCreateCommand: the command to run after the container is installed.
+FINISH POST
+
+### Configure your Dev Container
