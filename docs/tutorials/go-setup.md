@@ -32,6 +32,10 @@ Create a README file for your directory.
 echo "# My Go Project" > README.md
 ```
 
+???+ Note
+
+    The` >` symbol writes the output of the `echo` command to a file called README.md.
+
 Finally, stage and commit your changes to your new repository!
 ```
 git add .
@@ -44,7 +48,9 @@ git commit -m "Adding a README file to my Go project."
 
 Navigate to your Github and create a new repository with the **same name as your local repository**. Add whatever description you’d like!
 
+???+ Note
 
+    Make sure your GitHub repository does not initialize a README file;  we already created one locally in the previous step, so there's no need to do it again.
 
 ### Linking your local and remote repositories
 With your project still open in VSCode, add your Github repository as the corresponding remote repository:
@@ -56,6 +62,10 @@ For your first push to your remote, you’ll need to specify the upstream:
 ```
 git push --set-upstream origin main
 ```
+
+???+ note
+
+    The --set-upstream flag creates a tracking relationship between the main branch in your local repository and the one in your remote repository. This flag can be shortened to -u.
 
 After initially specifying the upstream, you can push to your remote repository with this command:
 ```
@@ -75,6 +85,11 @@ Open up your "go-project" directory in VSCode again!
 1. Navigate to the left sidebar on your screen
 2. Click on the extensions tab
 3. Download the Dev Containers extension in VSCode
+
+???+ note
+
+    You should see "Dev Containers" come up as an extension automatically, but if not, its identifier is `ms-vscode-remote.remote-containers`.
+
 
 In the root of go-project, create a directory called ```.devcontainer```. Inside of this directory, create a file named ```devcontainer.json```.
 
@@ -114,6 +129,11 @@ go version
 ```
 This should output a number - this is the version of Go that you're using!
 Congrats, your dev container is all set up and ready!
+
+???+ note
+
+    If you get an error message or don't see a number, double check that you've completed the dev container setup steps correctly.
+
 
 ## Writing + Running Your First Go Program
 
