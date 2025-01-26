@@ -3,6 +3,9 @@ theme:
   name: material
   features:
     - content.code.copy
+  icon: 
+    admonition:
+      alert: material/head-alert
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -13,4 +16,3 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
