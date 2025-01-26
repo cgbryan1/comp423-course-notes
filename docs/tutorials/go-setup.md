@@ -81,15 +81,62 @@ In the root of go-project, create a directory called ```.devcontainer```. Inside
 The ```devcontainer.json``` file that you just created holds the configuration for your development environment.
 Paste this text inside of it:
 ```
-/// put code here eek
+{
+  "name": "COMP423 Go Tutorial",
+  "image": "mcr.microsoft.com/vscode/devcontainers/go:latest",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["golang.go"]
+    }
+  },
+  "postCreateCommand": "go mod init comp423-go-tutorial"
+}
 ```
 
 if you look closely at this code, you can see that we specify the following:
 1. name: a name for your dev container
 2. image: a base image from microsoft. this tutorial uses one associated with Go.
-3. customizations: include extensions needed in your dev container so that they're installed for other developers automatically.
-FINISH CUTOMIZE
-4. postCreateCommand: the command to run after the container is installed.
-FINISH POST
+3. customizations: here, we install VSCode's Go plugin.
+4. postCreateCommand: the command to run after the container is installed. In our case, we run ```go build``` to create your go project!
 
-### Configure your Dev Container
+### Reopen Project in Dev Container
+
+* Open your command palette in VS Code (Cmd+Shift+P)
+* Select **Dev Containers: Reopen in Container**
+* Let the container build & start! This might take a minute.
+
+### Verify Your Go Installation
+
+Now that your container is open and running, open up a new terminal and run:
+```
+go version
+```
+This should output a number - this is the version of Go that you're using!
+Congrats, your dev container is all set up and ready!
+
+## Writing + Running Your First Go Program
+
+### Step 1: Write Your Program
+
+Create a new file called ```helloworld.go``` in your project's root directory.
+Paste in the followiung code:
+
+```
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello COMP423!")
+}
+```
+
+breaking down this code:
+```package main```: declares a main package, aka a way to group functions. this includes all the files in the same directory.
+```import "fmt"```: importing a standard Go library package. This specifically allows you to print text to the console, which we do in the next function!
+```func main()```: our main function automatically executes when you run a program in Go.This will print out "Hello COMP423!" to your console, but feel free to replace the text inside the parenthesis with any message you want!
+
+### Step 2: Build and Run Your Program
+
+In the terminal,
