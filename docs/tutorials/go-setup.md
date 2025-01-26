@@ -3,6 +3,8 @@
 * Primary author: [Caroline Bryan](https://github.com/cgbryan1)
 * Reviewer: [Lizzie Coats](https://github.com/escoats)
 
+* Adapted from [MKDocs tutorial](https://comp423-25s.github.io/resources/MkDocs/tutorial/) with info from [Go Documentation](https://go.dev/doc/)
+
 ## Prerequisites
 Before attempting to set up your workspace, make sure you’ve completed the following:
 
@@ -212,7 +214,4 @@ To run this compiled file, use the following code (adjusting the file name if ne
 
 You did it! At this point, you've set up your own Dev Container with a functioning Go environment, written your first Go program, and learned how to run and export it! 🎉🎉🎉🎉
 
-### Sources
-
-* [MKDocs tutorial](https://comp423-25s.github.io/resources/MkDocs/tutorial/)
-* [Go Documentation](https://go.dev/doc/)
+If you're feeling suuuuuper grateful, my venmo is @carolinebryann. I also accept poems and sonnets as tokens of appreciation. 🤭
