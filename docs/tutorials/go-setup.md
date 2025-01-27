@@ -213,4 +213,4 @@ To run this compiled file, use the following code (adjusting the file name if ne
 
 You did it! At this point, you've set up your own Dev Container with a functioning Go environment, written your first Go program, and learned how to run and export it! 🎉🎉🎉🎉
 
-If you're feeling suuuuuper grateful, my venmo is @carolinebryann. I also accept poems and sonnets as tokens of appreciation. 🤭
+If you enjoyed this Go tutorial, my venmo is @carolinebryann. I also accept poems as tokens of appreciation. 🤭
