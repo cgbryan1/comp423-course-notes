@@ -184,7 +184,7 @@ Now that we understand our go subcommands, we can run our program!
 Copy this code into the terminal of your VSCode project:
 
 ```
-go run main.go
+go run hello423.go
 ```
 
 This will run the main function of your go program! You should see the following output:
@@ -198,7 +198,7 @@ Hello COMP423!
 To build an executable object file of your program, run the following in your project's VSCode terminal:
 
 ```
-go build -o hello_comp423 main.go
+go build -o hello_comp423 hello423.go
 ```
 
 This will return an executable object file named ```hello_comp423```. Feel free to change the name in the command above!
