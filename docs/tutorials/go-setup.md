@@ -133,12 +133,11 @@ go version
 ```
 This should output a number - this is the version of Go that you're using!
 
-Congrats, your dev container is all set up and ready!
-
 ???+ note
 
     If you get an error message or don't see a number, double check that you've completed the dev container setup steps correctly.
 
+Congrats, your dev container is all set up and ready!
 
 ## Writing + Running Your First Go Program
 
@@ -160,7 +159,7 @@ func main() {
 
 **Breaking down this code:**
 
-```package main```: declares a main package, aka a way to group functions. this includes all the files in the same directory.
+```package main```: declares a main package, aka a way to group functions. This includes all the files in the same directory.
 
 ```import "fmt"```: importing a standard Go library package. This specifically allows you to print text to the console, which we do in the next function!
 
@@ -172,11 +171,11 @@ Before we get started, let's understand the difference between the ```build``` a
 
 ```go run```: this command will compile and run your program *temporarily*. It requires a Go environment to execute, and does not create an executable object file!
 
-```go build```: this command compiles your program and creates a single, static binary executable object file. Since this file is statically linked, it contains all dependencies. You don't need a Go environemnt to run this file!
+```go build```: this command compiles your program and creates a single, static binary executable object file. Since this file is statically linked, it contains all dependencies. You don't need a Go environment to run this file!
 
 **a side note about gcc:**
 
-```gcc```: You might already know this command to compile your program from COMP 211. Just like ```go build```, it allows us to compile our program into an executable object file. While this command offers us more flexibility in linking and compiling, it also is more complex and requires more effort. Since we want to quickly compile *and* execute our programs, we'll stick with the above go subcommands in this tutorial!
+```gcc```: Just like `go build`, this command allows us to compile our program into an executable object file. While `gcc` offers us more flexibility in linking and compiling, it also is more complex and requires more effort. Since we want to quickly compile *and* execute our programs, we'll stick with the above go subcommands in this tutorial!
 
 Now that we understand our go subcommands, we can run our program!
 
