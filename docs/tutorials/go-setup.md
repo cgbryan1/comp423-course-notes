@@ -36,9 +36,9 @@ echo "# My Go Project" > README.md
 
 ???+ Note
 
-    The` >` symbol writes the output of the `echo` command to a file called README.md.
+    The` >` symbol writes the output of the `echo` command to a file called README.md
 
-Finally, stage and commit your changes to your new repository!
+Finally, stage and commit your changes to your new repository.
 ```
 git add .
 git commit -m "Adding a README file to my Go project."
